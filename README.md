@@ -118,11 +118,15 @@ Build with **arduino-cli**
 ```bash
 sh build.sh
 
+---
+
 ##🧡 Credits
 
 Original Authors: Ben Arc, DNI (LNbits)
 Fork Maintainer: Bitcoin Manor / StacksWorth
 License: GPL-3.0
+
+---
 
 ##🛠️ Project Vision
 
