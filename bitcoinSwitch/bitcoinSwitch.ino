@@ -1,3 +1,5 @@
+#define NFC
+
 #include <ArduinoJson.h>
 #include <WebSocketsClient.h>
 
@@ -22,6 +24,10 @@ void setup() {
     #endif
     setupConfig();
     setupWifi();
+    
+    #ifdef NFC
+    setupNFC();
+    #endif
 
     pinMode(2, OUTPUT); // To blink on board LED
 
@@ -59,6 +65,10 @@ void setup() {
 void loop() {
     loopWifi();
     webSocket.loop();
+    
+    #ifdef NFC
+    loopNFC();
+    #endif
 }
 
 void executePayment(uint8_t *payload) {
