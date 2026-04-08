@@ -1,4 +1,5 @@
-#define NFC
+#define TFT
+//#define NFC  //Trying to sort out the Screen before we have the NFC enabled
 
 #include <ArduinoJson.h>
 #include <WebSocketsClient.h>
